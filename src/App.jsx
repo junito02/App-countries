@@ -7,8 +7,10 @@ function App() {
   const [selectedRegion, setSelectedRegion] = useState("All");
   const [selectedCountry, setSelectedCountry] = useState(null);
 
+  const VITE_API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
-    fetch(`https://restcountries.com/v3.1/all`)
+    fetch(VITE_API_URL)
       .then((res) => res.json())
       .then((data) => {
         setCountries(data);
