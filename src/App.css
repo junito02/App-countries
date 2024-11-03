@@ -1,0 +1,133 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #2c2c2c; /* Fondo oscuro */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+}
+
+.title {
+  color: gold;
+  text-align: center;
+  margin-top: 20px;
+}
+.App {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff; /* Texto blanco para contraste */
+}
+
+input[type="text"],
+select {
+  padding: 10px;
+  border: 1px solid #444; /* Borde más oscuro */
+  border-radius: 4px;
+  width: calc(100% - 20px); /* Ancho responsivo con margen */
+  max-width: 250px; /* Ancho máximo */
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff; /* Color de foco */
+  outline: none;
+}
+
+.country-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.country-card {
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  background: linear-gradient(135deg, #3b3b3b, #5a5a5a); /* Degradado oscuro */
+  color: #ffffff; /* Color blanco para el texto */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 220px; /* Ancho de las tarjetas */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: left; /* Alinear texto a la izquierda */
+  position: relative; /* Para efectos de hover */
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.country-card h1 {
+  font-size: 1.5em; /* Tamaño más grande para el título */
+  color: #ffcc00; /* Color dorado */
+  margin: 0;
+}
+
+img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px; /* Bordes redondeados en las imágenes */
+}
+
+p {
+  color: #ffffff; /* Texto blanco para mejor legibilidad */
+  margin: 5px 0;
+  font-size: 0.9em; /* Tamaño de fuente más legible */
+}
+
+.no-results {
+  color: #999;
+  font-style: italic;
+}
+
+.country-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.details-card {
+  background-color: #444; /* Fondo oscuro para detalles */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.details-card:hover {
+  transform: scale(1.02);
+}
+
+.back-button {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background-color: #007bff; /* Color del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.details-card h2 {
+  font-size: 2.2em; /* Tamaño más grande */
+  margin-bottom: 10px;
+  color: #ffcc00; /* Color dorado para el texto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el título */
+}
+
+.details-card p {
+  font-size: 1.1em;
+  color: #dcdcdc; /* Texto gris claro */
+  line-height: 1.5; /* Mejorar legibilidad */
+}
